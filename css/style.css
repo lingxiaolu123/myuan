@@ -1,7 +1,7 @@
 @charset "utf-8";
 		body{margin:0;padding:0;border:0;width:100%;background:#f4f4f4;position:relative;font-family:微软雅黑;}
 		body,header,div{display:block;}
-		html,a{cursor:url(/image/shubiao.ico),auto;}
+		html,a{cursor:url(../image/shubiao.ico),auto;}
 		a{text-decoration:none;}
 		header{width:100%;height:150px;line-height:250px;margin:0 auto;z-index:111;background:url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1557817553235&di=4a2ad9a4c3ee2b467e197554e79ef114&imgtype=0&src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farticle%2Fcfc6611edc91f633fdbf758d8d2a096c76ec610f.jpg) center 20%;background-size:110%;box-shadow:0 1px 1px 0 #666;}
 		#header{position:fixed;top:0;z-index:99999;overflow:hidden;transition:all 0.3s;}
