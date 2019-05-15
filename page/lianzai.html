@@ -13,9 +13,23 @@
 		window.onload=function()
 		{
 			dh();//导航
+			$(function(){
+				
+				var $waterfall = $('#waterfall');
+				
+				$waterfall.masonry({
+				  columnWidth: 230
+				});
+				
+			  });
 		}
 		</script>
 		
+			
+			
+			<script src="../js/lightbox.js"></script>
+			<script src="../js/jquery.masonry.min.js"></script>
+			
 		
 		<link rel="stylesheet" href="../css/lightbox.css" type="text/css" media="screen" />
 		<script src="../js/jquery-1.7.2.min.js"></script>
@@ -114,24 +128,6 @@
 				
 			</ul>
 			</div>
-			
-			
-			<script src="../js/lightbox.js"></script>
-			<script src="../js/jquery.masonry.min.js"></script>
-			<script>
-			  windows.onload=function()
-			  {
-				  $(function(){
-				
-				var $waterfall = $('#waterfall');
-				
-				$waterfall.masonry({
-				  columnWidth: 230
-				});
-				
-			  });
-			  }
-			</script>
 			
 			
 			<div class="activity">
