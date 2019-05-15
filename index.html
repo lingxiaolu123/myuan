@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8">
+		<link rel="shortcut icon" href="image/logo_ico.ico" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<title>漫元汉化组</title>
+		<meta name="description" content="漫元shop汉化组是以日文漫画为主，由百度动漫吧合作次元馆组建的一个非营利性汉化组织，自成立以来汉化组一直以质量优先的原则为广大读者服务，并且是国内少数以简体字为标准的日漫汉化组" />
+		<meta name="keywords" content="漫元汉化组,汉化,漫画,百度动漫吧,次元馆,茗茶汉化组,动漫之家"/>
+		<script src="js/jquery-1.8.0.js"></script>
+		<script src="js/js.js"></script>
+		<script type="text/javascript">
+		var t = n =0, count;
+		$(document).ready(function(){ 
+		count=$("#banner_list a").length;
+		$("#banner_list a:not(:first-child)").hide();
+		$("#banner_info").html($("#banner_list a:first-child").find("img").attr('alt'));
+		$("#banner_info").click(function(){window.open($("#banner_list a:first-child").attr('href'), "_blank")});
+		$("#banner li").click(function() {
+		var i = $(this).text() -1;//获取Li元素内的值，即1，2，3，4
+		n = i;
+		if (i >= count) return;
+		$("#banner_info").html($("#banner_list a").eq(i).find("img").attr('alt'));
+		$("#banner_info").unbind().click(function(){window.open($("#banner_list a").eq(i).attr('href'), "_blank")})
+		$("#banner_list a").filter(":visible").fadeOut(500).parent().children().eq(i).fadeIn(1000);
+		document.getElementById("banner").style.background="";
+		$(this).toggleClass("on");
+		$(this).siblings().removeAttr("class");
+		});
+		t = setInterval("showAuto()", 4000);
+		$("#banner").hover(function(){clearInterval(t)}, function(){t = setInterval("showAuto()", 4000);});
+		})
+		function showAuto()
+		{
+		n = n >=(count -1) ?0 : ++n;
+		$("#banner li").eq(n).trigger('click');
+		}
+		
+		window.onload=function()
+		{
+			dh();//导航
+		}
+		
+</script>
+
+		
+	</head>
+	<body>
+		<header id="header">
+				<div>
+				</div>
+					<ul>
+						<li><a href="index.html" style="background:none;"><img id="logo" src="image/logo.png" /></a></li>
+						<li><a href="index.html">首页</a></li>
+						<li><a href="page/lianzai.html">连载/填坑中</a></li>
+						<li><a href="page/wanjie.html">完结/停刊</a></li>
+						<li><a href="page/zanting.html">暂停/弃坑</a></li>
+						<li><a href="page/jiaru.html">加入我们</a></li>
+					</ul>
+		</header>
+		
+		<div class="Abody">
+			
+			<div class="Aleft">
+				<div id="banner" style="position:relative;height:388px;border:0;">
+					<div id="banner_bg"></div>
+					<!--标题背景-->
+					<div id="banner_info"></div>
+					<!--标题-->
+					<ul>
+						<li class="on">1</li>
+						<li>2</li>
+						<li>3</li>
+						<li>4</li>
+					</ul>
+					<div id="banner_list"> 
+						<a href="https://manhua.dmzj.com/overlord" target="_blank">
+						<img src="image/OVERLORD.jpg" title="OVERLORD" alt="OVERLORD"/>
+						</a> 
+						<a href="https://manhua.dmzj.com/lv999decunmin" target="_blank"><img src="image/LV999的村民.jpg" title="LV999的村民" alt="LV999的村民"/></a> 
+						<a href="https://manhua.dmzj.com/zymfdcwsyffbfzcdzlry" target="_blank"><img src="image/治愈魔法的错误使用方法.jpg" title="治愈魔法的错误使用方法" alt="治愈魔法的错误使用方法"/></a> 
+						<a href="https://manhua.dmzj.com/zcwszzs" target="_blank"><img src="image/致曾为神之众兽.jpg" title="致曾为神之众兽" alt="致曾为神之众兽"/></a> 
+					</div>
+				</div>
+			</div>
+			
+			<div class="Aright">
+				<table class="guide" border="0" cellpadding="0" cellspacing="0">
+					<tr><td><img src="image/logo_ico.jpg"></td></tr>
+					<tr><td style="padding:0 10px 10px;"><b>漫元汉化组</b></td></tr>
+					<tr><td style="text-align:left;font-size:15px;background:rgba(255,255,255,0.6); padding:15px;">介绍：漫元shop汉化组成立于2013年1月3日，是以日文漫画为主，由百度动漫吧合作次元馆组建的一个非营利性汉化组织，自成立以来汉化组一直以质量优先的原则为广大读者服务，并且是国内少数以简体字为标准的日漫汉化组， 又在2017年与茗茶汉化组结成了战略伙伴关系，为汉化组的进一步发展打下了良好的基础。</td></tr>
+				</table>
+			</div>
+			
+			
+			<div class="activity">
+			<img src="image/招募广告.jpg" />
+			</div>
+			
+			
+			
+			<div class="Aleft tuijian" style="width:100%;padding:0;">
+				<div class="tuijian_kj">
+					<h3 class="title">推荐作品<a class="gengduo">更多<a></h3>
+					<ul>
+						<li>
+							<a class="xia" href="https://manhua.dmzj.com/overlord" target="_blank"><img src="image/overlord_haibao.jpg" /><b class="shang">OVERLORD</b></a>
+						</li>
+						<li>
+							<a class="xia" href="https://manhua.dmzj.com/lv999decunmin" target="_blank"><img src="image/LV999的村民_haibao.jpg" /><b class="shang">LV999的村民</b></a>
+						</li>
+						<li>
+							<a class="xia" href="https://manhua.dmzj.com/zymfdcwsyffbfzcdzlry" target="_blank"><img src="image/治愈魔法的错误使用方法_haibao.jpg" /><b class="shang">治愈魔法的错误使用方法</b></a>
+						</li>
+						<li>
+							<a class="xia" href="https://manhua.dmzj.com/zcwszzs" target="_blank"><img src="image/致曾为神之众兽_haibao.jpg" /><b class="shang">致曾为神之众兽</b></a>
+						</li>
+						<li>
+							<a class="xia" href="https://manhua.dmzj.com/yeshengdezuizhongbosschuxianle" target="_blank"><img src="image/野生的最终BOSS出现了_haibao.jpg" /><b class="shang">野生的最终BOSS出现了</b></a>
+						</li>
+					<ul>
+				</div>
+			</div>
+			
+			<div class="Aleft hezuo" style="width:100%;padding:0;">
+				<div class="hezuo_kj">
+					<h3 class="title">合作组织</h3>
+					<ul>
+						<li><a href="http:www.dmzj.com" target="_blank"><img src="image/合作1.png" alt="动漫之家" /></a></li>
+						<li><a href="https://tieba.baidu.com/f?kw=%B6%AF%C2%FE&traceid=" target="_blank"><img src="image/合作2.png" alt="百度动漫" /></a></li>
+						<li><a><img src="image/合作3.png" /></a></li>
+						<li><a href="https://weibo.com/u/5046905288" target="_blank"><img src="image/合作4.png" /></a></li>
+					</ul>
+				</div>
+			</div>
+		
+		
+			<div class="Aleft jiewei">
+			<a href="index.html">漫元汉化组</a>|
+			<a href="">关于我们</a>|
+			<a href="">加入我们</a>|
+			<a href="">站长统计</a>
+			</div>
+		</div>
+		
+		
+		<div id="DIYmoveprompt">
+			<span>
+    		招募学员：翻译、修图、嵌字，有一技之长 或 感兴趣的<a href="https://jq.qq.com/?_wv=1027&k=56N5NgX" target="_blank">请点击入学</a>。
+			</span>
+		<s><img id="DIYmovepromptclose" src="image/icon_close.png"></s>
+		</div>
+		<script>
+		var aDIYmove=document.getElementById('DIYmoveprompt');
+		var aDIYclose=document.getElementById('DIYmovepromptclose');
+		function DIYmove()
+		{
+			aDIYmove.style.marginLeft='50%';
+		}
+		setTimeout(DIYmove,3000);
+		aDIYclose.onclick=function ()
+		{
+			aDIYmove.style.display='none';
+		}
+		</script>
+	
+	</body>
+</html>
