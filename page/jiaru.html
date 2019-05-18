@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8">
+		<link rel="shortcut icon" href="../image/logo_ico.ico" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="../css/style.css" />
+		<title>加入我们_漫元汉化组</title>
+		<meta name="description" content="漫元shop汉化组是以日文漫画为主，由百度动漫吧合作次元馆组建的一个非营利性汉化组织，自成立以来汉化组一直以质量优先的原则为广大读者服务，并且是国内少数以简体字为标准的日漫汉化组" />
+		<meta name="keywords" content="漫元汉化组,汉化,漫画,百度动漫吧,次元馆,茗茶汉化组,动漫之家"/>
+		<script src="../js/jquery-1.8.0.js"></script>
+		<script src="../js/js.js"></script>
+		<script type="text/javascript">
+		window.onload=function()
+		{
+			dh();//导航
+		}
+		</script>
+		
+	</head>
+	<body>
+		<header id="header">
+				<div>
+				</div>
+					<ul>
+						<li><a href="../index.html" style="background:none;"><img id="logo" src="../image/logo.png" /></a></li>
+						<li><a href="../index.html">首页</a></li>
+						<li><a href="lianzai.html">连载/填坑中</a></li>
+						<li><a href="wanjie.html">完结/停刊</a></li>
+						<li><a href="qikeng.html">暂停/弃坑</a></li>
+						<li><a href="jiaru.html">加入我们</a></li>
+					</ul>
+		</header>
+		
+		<div class="Abody">
+			
+			<div class="bread_crumb">
+				<a class="home" href="../index.html">首页</a>&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
+				<a href="jiaru.html">加入我们</a>
+			</div>
+			
+			<div id="xuanxiang" class="Aleft">
+				<ul>
+					<li class="liH">联系方式</li>
+					<li>主要管理</li>
+					<li>荣誉成员</li>
+				</ul>
+			</div>
+			
+			<div id="xuanxiangka" class="Aright">
+				<div class="Adis">
+					<h3 class="title">联系方式</h3>
+					<p>漫元shop微博：<a href="http://weibo.com/u/5715751617" target="_blank">http://weibo.com/u/5715751617</a></p>
+					<p>邮箱地址：yunidemingtian@163.com</p>
+					<p>汉化组主群：139918020（联系合作等请注明）</p>
+					<p>汉化组新人培养群：328818859</p>
+					<p>次元馆水群：114101330，118647585</p>
+					<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+				</div>
+				<div>
+					<h3 class="title">主要成员</h3>
+					<p>汉化组监督：齐天大仙</p>
+					<p>汉化组组长：伪大的V娘</p>
+					<p>汉化组翻译组长：皮卡丘</p>
+					<p>汉化组嵌修组长：小轩</p>
+					<p>汉化组顾问：唔掂叔</p>
+					<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+				</div>
+				<div>
+					<h3 class="title">荣誉成员</h3>
+					<p>翻译组：虾饺，奇迹，萌古，KK，饭饭，屎猫 </p>
+					<p>嵌修组：嘀嘀，小轩，莫莫，土豆泥，野良兔，竣文</p>
+					<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+					<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+				</div>
+			</div>
+			<script>
+				var Axuanxiang=document.getElementById('xuanxiang');
+				var AxuanxiangLi=Axuanxiang.getElementsByTagName('li');
+				var Axuanxiangka=document.getElementById('xuanxiangka');
+				var Axuanxiangkadiv=Axuanxiangka.getElementsByTagName('div');
+				
+				for(var i=0;i<AxuanxiangLi.length;i++)
+				{
+					AxuanxiangLi[i].index=i;
+					AxuanxiangLi[i].onclick=function()
+					{
+						for(var i=0;i<Axuanxiangkadiv.length;i++)
+						{
+							AxuanxiangLi[i].className='';
+							Axuanxiangkadiv[i].className='';
+						}
+						this.className='liH';
+						Axuanxiangkadiv[this.index].className='Adis';
+					}
+				}
+			</script>
+			
+			
+			<div class="activity">
+			<img src="../image/招募广告.jpg" />
+			</div>
+							
+			<div class="Aleft jiewei">
+			<a href="index.html">漫元汉化组</a>|
+			<a href="">关于我们</a>|
+			<a href="">加入我们</a>|
+			<a href="">站长统计</a>
+			</div>
+		</div>
+		
+		
+		<div id="DIYmoveprompt">
+			<span>
+    		招募学员：翻译、修图、嵌字，有一技之长 或 感兴趣的<a href="https://jq.qq.com/?_wv=1027&k=56N5NgX" target="_blank">请点击入学</a>。
+			</span>
+		<s><img id="DIYmovepromptclose" src="../image/icon_close.png"></s>
+		</div>
+		<script>
+		var aDIYmove=document.getElementById('DIYmoveprompt');
+		var aDIYclose=document.getElementById('DIYmovepromptclose');
+		function DIYmove()
+		{
+			aDIYmove.style.marginLeft='50%';
+		}
+		setTimeout(DIYmove,3000);
+		aDIYclose.onclick=function ()
+		{
+			aDIYmove.style.display='none';
+		}
+		</script>
+	
+	</body>
+</html>
